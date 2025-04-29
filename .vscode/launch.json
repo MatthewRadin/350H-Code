@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch Problem1.exe",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Problem 1/Problem1.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/Problem 1", // Set the working directory
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/mingw/bin/gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build Problem1"
+        }
+    ]
+}
