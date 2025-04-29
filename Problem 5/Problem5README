@@ -1,0 +1,3 @@
+In this code, the input has to have the text: 'INF' to represent infinity. It is converted to 1e9 as a very large number to represent an infinite value.
+
+Other inputs will not work
